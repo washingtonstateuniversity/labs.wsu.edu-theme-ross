@@ -5,7 +5,7 @@
  Author:         WSU University Communications
  Author URI:     https://ucomm.wsu.edu/
  Template:       spine
- Version:        0.0.1
+ Version:        0.0.2
 */
 * {
   margin:0;
@@ -46,9 +46,17 @@ main section:first-of-type {
   font-size:4rem;
   font-weight:600;
   text-transform: capitalize;
+  margin-left: auto;
+  margin-right: auto;
+}
+.home .main-header .sup-header-default {
+    width: 80%;
 }
 .main-header sup a {
   color:#fff;
+}
+.main-header sup a:hover {
+  background:transparent;
 }
 .home .main-header {
   height:300px;
@@ -209,6 +217,13 @@ h2 {
   padding-top:1.5em;
   padding-bottom:1.3em;
 }
+aside header,
+.widget header {
+  font-size:1.2rem;
+  font-weight:600;
+  padding-bottom:.8em;
+  padding-top:1.5em;
+}
 main a:hover {
   background: rgba(243, 240, 239, 1);
 }
@@ -218,6 +233,12 @@ main article header h2.article-title {
 .article-header hgroup.source,
 .article-header .hgroup.source {
   padding-bottom:3em;
+}
+hr {
+  margin-top:2em;
+}
+.featured-image {
+  height:300px;
 }
 /************************************
   Utility items
@@ -258,6 +279,23 @@ main input[type=button]:hover {
 input[type=text] {
   padding:.4em;
 }
+aside input[type=text],
+aside input[type=password],
+aside input[type=email],
+aside input[type=search],
+.widget input[type=text],
+.widget input[type=password],
+.widget input[type=email],
+.widget input[type=search] {
+  background: #fff;
+  border-radius: 0;
+  border: 1px solid #cacaca;
+  min-height: 45px;
+  font-size: 1.5rem;
+  color: #585858;
+  padding: .2em;
+  margin-bottom:.8em;
+}
 /**************************************
   Gravity forms
 ***************************************/
@@ -281,6 +319,21 @@ input[type=text] {
 .gform_wrapper ul.gfield_checkbox li,
 .gform_wrapper ul.gfield_radio li {
   overflow: visible;
+}
+.gform_wrapper ul.gform_fields li.gfield select {
+  height:40px;
+}
+.gform_wrapper textarea {
+	padding:.8em;
+}
+.gform_wrapper .gfield_checkbox li label,
+.gform_wrapper .gfield_radio li label {
+  font-size:.9rem;
+  font-weight:400;
+}
+.gform_wrapper .top_label .gfield_label {
+  font-size:1rem;
+  padding-top:.8em;
 }
 /**************************************
   Staff
