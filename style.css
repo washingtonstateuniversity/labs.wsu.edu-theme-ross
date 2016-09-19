@@ -229,10 +229,12 @@ main a:hover {
 }
 main article header h2.article-title {
   padding-bottom:.3em;
+  padding-top:.7em;
 }
+
 .article-header hgroup.source,
 .article-header .hgroup.source {
-  padding-bottom:3em;
+  padding-bottom:2em;
 }
 hr {
   margin-top:2em;
@@ -243,59 +245,7 @@ hr {
 /************************************
   Utility items
 ************************************/
-button a {
-  color:#fff;
-}
-a.button,
-.button,
-main button,
-main input[type=submit],
-main input[type=reset],
-main input[type=button] {
-  background:#981E32;
-  color:#fff;
-  border-radius: 0;
-  border:none;
-  font-size:1.2rem;
-  padding:.8em;
-  line-height:1;
-}
-button a:hover{
-  color:#fff;
-  background:transparent;
-}
-a.button:hover,
-.button:hover,
-main button:hover,
-main input[type=submit]:hover,
-main input[type=reset]:hover,
-main input[type=button]:hover {
-  background:#c60c30;
-  color:#fff;
-  border-radius: 0;
-  border:none;
-  font-size:1.2rem;
-}
-input[type=text] {
-  padding:.4em;
-}
-aside input[type=text],
-aside input[type=password],
-aside input[type=email],
-aside input[type=search],
-.widget input[type=text],
-.widget input[type=password],
-.widget input[type=email],
-.widget input[type=search] {
-  background: #fff;
-  border-radius: 0;
-  border: 1px solid #cacaca;
-  min-height: 45px;
-  font-size: 1.5rem;
-  color: #585858;
-  padding: .2em;
-  margin-bottom:.8em;
-}
+
 /**************************************
   Gravity forms
 ***************************************/
@@ -334,6 +284,89 @@ aside input[type=search],
 .gform_wrapper .top_label .gfield_label {
   font-size:1rem;
   padding-top:.8em;
+}
+/******************************************
+	# Forms
+*******************************************/
+main input[type=text],
+main input[type=password],
+main input[type=email],
+main input[type=search],
+main select,
+main textarea {
+  background:#fff;
+  border-radius:0;
+  border:1px solid #cacaca;
+  min-height:35px;
+  font-size:1.5rem;
+  color:#585858;
+  padding:.2em;
+}
+main input[type=text]:focus,
+main input[type=password]:focus,
+main input[type=email]:focus,
+main input[type=search]:focus,
+main textarea:focus {
+  color:#585858;
+  box-shadow: none;
+  border:2px solid #cacaca;
+}
+main label,
+main legend {
+    font-weight: 700;
+    font-size: 18px;
+}
+button a {
+  color:#fff;
+}
+a.button,
+.button,
+main button,
+main input[type=submit],
+main input[type=reset],
+main input[type=button] {
+  background: #981E32;
+  color: #fff;
+  border-radius: 0;
+  border: none;
+  font-size: 1.1rem;
+  margin-top: 0;
+  padding: .66em;
+  line-height: 1;
+  vertical-align: top;
+}
+button a:hover{
+  color:#fff;
+  background:transparent;
+}
+a.button:hover,
+.button:hover,
+main button:hover,
+main input[type=submit]:hover,
+main input[type=reset]:hover,
+main input[type=button]:hover {
+  background:#c60c30;
+  color:#fff;
+  border-radius: 0;
+  border:none;
+  font-size: 1.1rem;
+}
+aside input[type=text],
+aside input[type=password],
+aside input[type=email],
+aside input[type=search],
+.widget input[type=text],
+.widget input[type=password],
+.widget input[type=email],
+.widget input[type=search] {
+  background: #fff;
+  border-radius: 0;
+  border: 1px solid #cacaca;
+  min-height: 45px;
+  font-size: 1.5rem;
+  color: #585858;
+  padding: .2em;
+  margin-bottom:.8em;
 }
 /**************************************
   Staff
@@ -377,6 +410,20 @@ aside input[type=search],
 }
 .staff.more a:hover {
   background:transparent;
+}
+/**************************************
+  HTML
+***************************************/
+.article-summary {
+  padding-bottom:1em;
+}
+.blog article,
+.archive article {
+  padding-top:2em;
+}
+.blog article:first-of-type,
+.archive article:first-of-type {
+  padding-top:0;
 }
 /**************************************
   Tables
